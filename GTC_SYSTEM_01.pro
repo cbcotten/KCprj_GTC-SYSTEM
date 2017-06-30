@@ -1,4 +1,4 @@
-update=6/29/2017 12:34:18 PM
+update=6/30/2017 11:38:10 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -55,6 +55,16 @@ LibName25=RES_2512_Bourns_3W_1%_50PPMpC
 LibName26=RES_2512_Yageo_1W_1%_100ppm
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 
 
 
