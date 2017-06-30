@@ -291,11 +291,7 @@ X1-21
 Text Label 7000 1475 1    60   ~ 0
 X1-20
 Text Label 9600 3375 3    60   ~ 0
-X1-13
-Text Label 6900 1475 1    60   ~ 0
-X1-14
-NoConn ~ 6600 1475
-NoConn ~ 6500 1475
+X1-15
 NoConn ~ 6400 1475
 $Comp
 L GTC01_CONTROLLER CONTROL1
@@ -342,21 +338,19 @@ X1-1
 Text Label 9400 3375 3    60   ~ 0
 X1-2
 Text Label 9200 3375 3    60   ~ 0
-X1-3
+X1-6
 Text Label 9500 3375 3    60   ~ 0
 X1-4
 Text Label 9100 3375 3    60   ~ 0
+X1-17
+Text Label 6500 1475 1    60   ~ 0
 X1-12
-Text Label 6800 1475 1    60   ~ 0
-X1-15
-Text Label 6700 1475 1    60   ~ 0
-X1-16
 $Comp
 L GTC01_CONTROLLER CONTROL1
 U 5 1 59585CEB
 P 2275 3800
-F 0 "CONTROL1" H 2275 3900 60  0000 C CNN
-F 1 "GTC01_CONTROLLER" H 2275 3700 60  0000 C CNN
+F 0 "CONTROL1" H 2250 3700 60  0000 C CNN
+F 1 "GTC01_CONTROLLER" H 2250 3400 60  0000 C CNN
 F 2 "" H 1975 3525 60  0001 C CNN
 F 3 "" H 1975 3525 60  0001 C CNN
 F 4 "_" H 2275 3800 60  0001 C CNN "HPN"
@@ -489,7 +483,7 @@ Text Notes 1475 2525 0    50   ~ 0
 DIN\nRAIL
 Text Notes 6650 2200 0    50   ~ 0
 SCREW TERMINALS
-Text Notes 3975 2225 0    50   ~ 0
+Text Notes 3975 2250 0    50   ~ 0
 UPPER DECK
 Text Notes 3000 2250 0    50   ~ 0
 LOWER DECK
@@ -500,17 +494,17 @@ HTR2 CABLE\n20AWG/2
 Text Notes 9075 2175 0    50   ~ 0
 SCREW TERMINALS
 Text Label 4450 7600 0    60   ~ 0
-X1-13
+X1-15
 Text Label 4450 7300 0    60   ~ 0
 X1-1
 Text Label 4450 7400 0    60   ~ 0
 X1-2
 Text Label 4450 7200 0    60   ~ 0
-X1-3
+X1-6
 Text Label 4450 7500 0    60   ~ 0
 X1-4
 Text Label 4450 7100 0    60   ~ 0
-X1-12
+X1-17
 Text Label 1450 6900 2    60   ~ 0
 X1-1
 Text Label 1450 7000 2    60   ~ 0
@@ -524,11 +518,9 @@ X1-21
 Text Label 1450 7400 2    60   ~ 0
 X1-20
 Text Label 1450 7500 2    60   ~ 0
-X1-14
-Text Label 1450 7600 2    60   ~ 0
-X1-15
-Text Label 1450 7700 2    60   ~ 0
 X1-16
+Text Label 1450 7700 2    60   ~ 0
+X1-12
 Text Notes 2800 6800 0    60   ~ 0
 X1
 Text Label 650  6900 0    60   ~ 0
@@ -543,12 +535,8 @@ Text Label 650  7300 0    60   ~ 0
 5_SDI
 Text Label 650  7400 0    60   ~ 0
 6_CS1
-Text Label 650  7500 0    60   ~ 0
-7_RDY1
 Text Label 650  7600 0    60   ~ 0
-8_CS2
-Text Label 650  7700 0    60   ~ 0
-9_RDY2
+10_CS3
 Text Label 5000 7100 0    60   ~ 0
 7_CTRL1
 Text Label 5000 7200 0    60   ~ 0
@@ -562,7 +550,9 @@ Text Label 5000 7500 0    60   ~ 0
 Text Label 5000 7600 0    60   ~ 0
 12_CTRL2
 Wire Wire Line
-	6300 5850 7100 5850
+	6300 5850 6950 5850
+Wire Wire Line
+	6950 5850 7100 5850
 Wire Wire Line
 	6300 5750 6850 5750
 Wire Wire Line
@@ -572,7 +562,9 @@ Wire Wire Line
 Wire Wire Line
 	6850 6050 6950 5950
 Wire Wire Line
-	6300 5950 7100 5950
+	6300 5950 6950 5950
+Wire Wire Line
+	6950 5950 7100 5950
 Connection ~ 6950 5950
 Connection ~ 6950 5850
 Wire Wire Line
@@ -588,7 +580,9 @@ Wire Wire Line
 Wire Wire Line
 	6950 6050 7100 6050
 Wire Wire Line
-	8650 5850 9450 5850
+	8650 5850 9300 5850
+Wire Wire Line
+	9300 5850 9450 5850
 Wire Wire Line
 	8650 5750 9200 5750
 Wire Wire Line
@@ -598,7 +592,9 @@ Wire Wire Line
 Wire Wire Line
 	9200 6050 9300 5950
 Wire Wire Line
-	8650 5950 9450 5950
+	8650 5950 9300 5950
+Wire Wire Line
+	9300 5950 9450 5950
 Connection ~ 9300 5950
 Connection ~ 9300 5850
 Wire Wire Line
@@ -754,11 +750,11 @@ Wire Notes Line
 Wire Notes Line
 	8600 4300 8600 3450
 Wire Notes Line
-	7500 1450 7500 850 
+	7525 1450 7525 850 
 Wire Notes Line
-	7500 850  6600 850 
+	7525 850  6325 850 
 Wire Notes Line
-	6600 850  6600 1425
+	6325 850  6325 1475
 Wire Wire Line
 	5100 3450 5100 3700
 Wire Wire Line
@@ -824,11 +820,7 @@ Wire Wire Line
 Wire Wire Line
 	650  7400 1450 7400
 Wire Wire Line
-	650  7500 1450 7500
-Wire Wire Line
 	650  7600 1450 7600
-Wire Wire Line
-	650  7700 1450 7700
 Wire Notes Line
 	550  6750 1000 6750
 Wire Notes Line
@@ -861,4 +853,47 @@ Text Notes 2350 6700 0    50   ~ 0
 SCREW TERMINAL TERMINATION AT 2 ENDS\n2X13 IDC PLUG AT CENTER
 Text Notes 900  2050 0    50   ~ 0
 SCREW TERMINALS
+NoConn ~ 6700 1475
+NoConn ~ 6900 1475
+Text Label 6800 1475 1    60   ~ 0
+X1-16
+Text Label 6600 1475 1    60   ~ 0
+X1-14
+Text Notes 4175 800  0    60   ~ 0
+24V Logic\nActive High
+$Comp
+L Earth #PWR?
+U 1 1 5956EE24
+P 5400 4225
+F 0 "#PWR?" H 5400 3975 50  0001 C CNN
+F 1 "Earth" H 5400 4075 50  0001 C CNN
+F 2 "" H 5400 4225 50  0001 C CNN
+F 3 "" H 5400 4225 50  0001 C CNN
+	1    5400 4225
+	1    0    0    -1  
+$EndComp
+Text Label 4300 4100 2    60   ~ 0
+RS485_Cable_Shield
+Wire Wire Line
+	4300 4100 5400 4100
+Wire Wire Line
+	5400 4100 5400 4225
+Wire Notes Line
+	4775 3550 3100 3550
+Wire Notes Line
+	3100 3550 3100 4150
+Wire Notes Line
+	3100 4150 4825 4150
+Text Notes 3600 3875 2    50   ~ 0
+RS485 Cable\n22AWG/4\n+SHIELD
+Text Label 1450 7600 2    60   ~ 0
+X1-14
+Text Label 650  7700 0    60   ~ 0
+11_CS4
+Wire Wire Line
+	650  7700 1450 7700
+Text Label 650  7500 0    60   ~ 0
+8_CS2
+Wire Wire Line
+	650  7500 1450 7500
 $EndSCHEMATC
