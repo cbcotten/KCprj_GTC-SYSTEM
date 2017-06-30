@@ -1,0 +1,225 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:CBC_BOM
+LIBS:CBC_Connector
+LIBS:CBC_Device
+LIBS:CBC_IC
+LIBS:CBC_Mechanical
+LIBS:CBC_Modules
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:CAP_0805_Murata_X5R_35V_10%
+LIBS:CAP_1210_Kemet_X7R_2kV_10%_E12
+LIBS:CAP_1210_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_2512_Bourns_3W_1%_50PPMpC
+LIBS:RES_2512_Yageo_1W_1%_100ppm
+LIBS:GTC_SYSTEM_01-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 3 3
+Title "2 Channel Temperature Sensor Module - RTD"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GTC02_RTD_R1 RTD-INPUT?
+U 1 1 59558A11
+P 5200 3400
+AR Path="/59558A11" Ref="RTD-INPUT?"  Part="1" 
+AR Path="/5955893D/59558A11" Ref="RTD-INPUT?"  Part="1" 
+F 0 "RTD-INPUT?" H 5200 3600 60  0000 C CNN
+F 1 "GTC02_RTD_R1" H 5200 3500 60  0000 C CNN
+F 2 "" H 4350 3350 60  0001 C CNN
+F 3 "" H 4350 3350 60  0001 C CNN
+F 4 "_" H 5200 3400 60  0001 C CNN "MPN"
+F 5 "_" H 5200 3400 60  0001 C CNN "HPN"
+F 6 "_" H 5200 3400 60  0001 C CNN "MFG"
+	1    5200 3400
+	1    0    0    -1  
+$EndComp
+Text Label 3500 6300 0    60   ~ 0
+RTD1-0
+Text Label 3500 6400 0    60   ~ 0
+RTD1-1
+Text Label 3500 6500 0    60   ~ 0
+RTD1-2
+Text Label 3500 6600 0    60   ~ 0
+RTD1-3
+Text Label 3500 6200 0    60   ~ 0
+RTD1-4
+Text Label 3600 4600 0    60   ~ 0
+RTD2-0
+Text Label 3600 4700 0    60   ~ 0
+RTD2-1
+Text Label 3600 4800 0    60   ~ 0
+RTD2-2
+Text Label 3600 4900 0    60   ~ 0
+RTD2-3
+Text Label 3600 5000 0    60   ~ 0
+RTD2-4
+Text HLabel 2000 1200 0    60   Input ~ 0
+5V
+Text HLabel 2000 1300 0    60   Input ~ 0
+GND
+Text HLabel 2000 1400 0    60   Input ~ 0
+CLK
+Text HLabel 2000 1500 0    60   Input ~ 0
+SDO
+Text HLabel 2000 1600 0    60   Input ~ 0
+SDI
+Text HLabel 2000 1800 0    60   Input ~ 0
+RDY1
+Text HLabel 2000 1900 0    60   Input ~ 0
+CS2
+Text HLabel 2000 1700 0    60   Input ~ 0
+CS1
+Text HLabel 2000 2000 0    60   Input ~ 0
+RDY2
+Text HLabel 2000 2100 0    60   Input ~ 0
+CS3
+Text HLabel 2000 2200 0    60   Input ~ 0
+CS4
+NoConn ~ 4650 2450
+Wire Wire Line
+	2000 1200 5750 1200
+Wire Wire Line
+	5750 1200 5750 2450
+Wire Wire Line
+	5650 2450 5650 1300
+Wire Wire Line
+	5650 1300 2000 1300
+Wire Wire Line
+	5550 2450 5550 1400
+Wire Wire Line
+	5550 1400 2000 1400
+Wire Wire Line
+	5450 2450 5450 1500
+Wire Wire Line
+	5450 1500 2000 1500
+Wire Wire Line
+	5350 2450 5350 1600
+Wire Wire Line
+	5350 1600 2000 1600
+Wire Wire Line
+	5250 2450 5250 1700
+Wire Wire Line
+	5250 1700 2000 1700
+Wire Wire Line
+	5150 2450 5150 1800
+Wire Wire Line
+	5150 1800 2000 1800
+Wire Wire Line
+	5050 2450 5050 1900
+Wire Wire Line
+	5050 1900 2000 1900
+Wire Wire Line
+	4950 2450 4950 2000
+Wire Wire Line
+	4950 2000 2000 2000
+Wire Wire Line
+	2000 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 2450
+Wire Wire Line
+	2000 2200 4750 2200
+Wire Wire Line
+	4750 2200 4750 2450
+Entry Wire Line
+	3500 4500 3600 4600
+Entry Wire Line
+	3500 4600 3600 4700
+Entry Wire Line
+	3500 4700 3600 4800
+Entry Wire Line
+	3500 4800 3600 4900
+Entry Wire Line
+	3500 4900 3600 5000
+Entry Wire Line
+	3400 6200 3500 6300
+Entry Wire Line
+	3400 6300 3500 6400
+Entry Wire Line
+	3400 6400 3500 6500
+Entry Wire Line
+	3400 6500 3500 6600
+Entry Wire Line
+	3400 6100 3500 6200
+Wire Wire Line
+	3600 4600 4650 4600
+Wire Wire Line
+	4650 4600 4650 4350
+Wire Wire Line
+	3600 4700 4750 4700
+Wire Wire Line
+	4750 4700 4750 4350
+Wire Wire Line
+	3600 4800 4850 4800
+Wire Wire Line
+	4850 4800 4850 4350
+Wire Wire Line
+	3600 4900 4950 4900
+Wire Wire Line
+	4950 4900 4950 4350
+Wire Wire Line
+	3600 5000 5050 5000
+Wire Wire Line
+	5050 5000 5050 4350
+Wire Wire Line
+	3500 6300 5450 6300
+Wire Wire Line
+	5450 6300 5450 4350
+Wire Wire Line
+	3500 6400 5550 6400
+Wire Wire Line
+	5550 6400 5550 4350
+Wire Wire Line
+	3500 6500 5650 6500
+Wire Wire Line
+	5650 6500 5650 4350
+Wire Wire Line
+	3500 6600 5750 6600
+Wire Wire Line
+	5750 6600 5750 4350
+Wire Wire Line
+	3500 6200 5350 6200
+Wire Wire Line
+	5350 6200 5350 4350
+Text HLabel 2000 4300 0    60   Input ~ 0
+RTD1-[0..4]
+Wire Bus Line
+	2000 4300 3500 4300
+Wire Bus Line
+	3500 4300 3500 4900
+Text HLabel 2000 5900 0    60   Input ~ 0
+RTD2-[0..4]
+Wire Bus Line
+	2000 5900 3400 5900
+Wire Bus Line
+	3400 5900 3400 6500
+Text HLabel 2000 5400 0    60   Input ~ 0
+P.E.
+Wire Wire Line
+	5150 4350 5150 5400
+Wire Wire Line
+	5150 5400 2000 5400
+NoConn ~ 5250 4350
+$EndSCHEMATC
